@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        section header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            top: 0;
+            position: absolute;
+            padding: 20px;
+        }
+        section header ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 490px;
+
+        }
+        section header ul li{
+            list-style: none;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        section header ul li a{
+            color: #111;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        section header ul li button{
+            border: none;
+            outline: none;
+            background: #4584ef;
+            font-weight: bold;
+            padding: 8px 14px;
+            color: white;
+            font-size: 14px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        section .main{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section .main .searchbox{
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+        section .main .searchbox .search{
+            padding: 13px;
+            width: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: -33px;
+            border: 1px #ccc solid;
+            outline: none;
+            font-size: 16px;
+        }
+        section .main .searchbox .icons{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            padding: 12px 20px;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
+        }
+        section .main .buton button{
+            margin: 0 5px;
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px solid transparent;
+        }
+        section .main .buton button:hover{
+            transition: 1s;
+            background-color: #ddd;
+            opacity: 0.9;
+        }
+        section .main .lang{
+            margin-top: 20px;
+        }
+        section .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+        section .footer .row{
+            display:flex;
+            justify-content: space-between;
+            border-top: 1px solid rgb(0, 0, 0, 0.5);
+        }
+        section .footer .row ul{
+            display: flex;
+        }
+        section .footer .row ul li{
+            list-style: none;
+        }
+        section .footer .row ul li a{
+            text-decoration: none;
+            color: rgb(12, 97, 97);
+            font-size: 14px;
+            margin-right: 25px;
+        }
+        /*tablet*/
+        @media (min-width:769px) and (max-width:1023px){
+            
+        }
+        /*desktop*/
+        @media (min-height:1024px){
+            section header .d1 ul button{
+                background-color: tomato;
+            }
+        }
+        /*mobile view*/
+        @media (max-width:768px){
+            section .main .searchbox .search{
+            width: 78%;
+            margin-left: -47px;
+        }
+        section .main .searchbox .icons{
+            width: 90%;
+        }
+        section footer ul li{
+            display: block;
+        }
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#">gmail</a></li>
+                <li><a href="#">images</a></li>
+                <li><a href="#"><img src="bars.png"></a></li>
+                <li><a href="#"><button>sign in</button></a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="google.png" alt="google">
+            <div class="searchbox">
+                <input type="text" name="text" class="search">
+                <div class="icons">
+                    <div><img src="search.png" alt=""></div>
+                    <div><img src="mic.png" alt=""></div>
+                </div>
+            </div>
+            <div class="buton">
+                <button>google search</button>
+          <button>i'm feeling lucky</button>
+            </div>
+            <div class="lang">
+                Google offered in <a href="">bangla</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="#">advertising</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">business</a></li>
+                    <li><a href="#">how search works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
